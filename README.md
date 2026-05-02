@@ -1,8 +1,8 @@
 # I2OS Resonance Extrapolation
 
-## Extrapolation without Data Scaling
+## Structure Enables Extrapolation
 
-> A minimal experiment showing that **structure—not data volume—enables extrapolation.**
+> A minimal experiment showing that **extrapolation is governed by structure—not data volume.**
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🔍 Core Result
+## 🔥 Core Result
 
 * A linear model fails immediately outside the training domain
 * A resonance-based model preserves structure and continues to track the true function
@@ -37,15 +37,15 @@ Traditional machine learning models rely on:
 * interpolation
 * optimization
 
-However, these approaches break down when:
+However, this paradigm breaks down when:
 
 * data is limited
 * the domain is unseen
 * the structure is nonlinear
 
-This repository demonstrates that:
+This repository demonstrates a minimal but fundamental result:
 
-> **When structural resonance is encoded, extrapolation becomes possible—even with minimal data.**
+> **When structural resonance is encoded, extrapolation becomes possible—even under low-data conditions.**
 
 ---
 
@@ -85,8 +85,8 @@ Linear regression:
 y = ax + b
 ]
 
-* Learns trend only
-* Fails outside training domain
+* captures only linear trend
+* fails immediately outside training domain
 
 ---
 
@@ -103,8 +103,8 @@ Feature transformation:
 ]
 ]
 
-* Encodes periodic structure
-* Preserves behavior outside training domain
+* encodes periodic structure
+* preserves behavior beyond training region
 
 ---
 
@@ -112,8 +112,8 @@ Feature transformation:
 
 ### Figure 1 – Extrapolation Behavior
 
-* Baseline diverges immediately
-* Resonance model follows true function
+* Baseline diverges outside training domain
+* Resonance model follows the true function
 
 ---
 
@@ -135,8 +135,8 @@ python experiment.py
 
 ## 📦 Output
 
-* figure1.png (behavior comparison)
-* figure2.png (error comparison)
+* `figure1.png` – behavior comparison
+* `figure2.png` – error comparison
 * reproducible minimal experiment
 
 ---
@@ -162,7 +162,7 @@ Meaning:
 
 ## 🌐 Interpretation
 
-```text
+```
 Baseline:
   Data fitting → interpolation
 
@@ -174,9 +174,9 @@ Resonance:
 
 ## 🚀 Implications
 
-This suggests a shift in AI design:
+This work suggests a shift in AI design:
 
-```text
+```
 From:
   Data-driven optimization
 
